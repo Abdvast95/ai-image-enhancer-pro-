@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Image Enhancer Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #030712; /* gray-950 */
+      }
+      /* Custom scrollbar styles */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1f2937; /* gray-800 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #a855f7; /* purple-500 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #d946ef; /* fuchsia-500 */
+      }
+
+      /* Custom styles for range inputs */
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+        width: 100%;
+      }
+      input[type="range"]::-webkit-slider-runnable-track {
+        background: #374151; /* gray-700 */
+        height: 0.5rem;
+        border-radius: 0.5rem;
+      }
+      input[type="range"]::-moz-range-track {
+        background: #374151; /* gray-700 */
+        height: 0.5rem;
+        border-radius: 0.5rem;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        margin-top: -4px;
+        height: 1.25rem;
+        width: 1.25rem;
+        background-color: #a855f7; /* purple-500 */
+        border-radius: 9999px;
+        border: 2px solid #111827; /* gray-900 */
+        box-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
+      }
+       input[type="range"]::-moz-range-thumb {
+        height: 1.25rem;
+        width: 1.25rem;
+        background-color: #a855f7; /* purple-500 */
+        border-radius: 9999px;
+        border: 2px solid #111827; /* gray-900 */
+        box-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-950 text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
